@@ -1,5 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+import torch
 from model import train_perceptron
 from utils import generate_hooke_data, plot_results
 
