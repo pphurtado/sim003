@@ -10,11 +10,10 @@ st.set_page_config(page_title="Perceptrón y Ley de Hooke", layout="wide")
 # Menú lateral (tipo hamburguesa)
 with st.sidebar:
     st.title("Menú")
-    seleccion = st.radio("Ir a:", ["Inicio", "Configuración","Visualización", ])
+    seleccion = st.radio("Ir a:", ["Inicio", "Configuración","Visualización"])
     st.markdown("---")
     st.write("Opciones adicionales")
-    if seleccion == "Configuración":
-        opcion_extra = st.checkbox("Activar modo avanzado")
+    
 #Para Cargar Loto
 import base64
 # Cargar la imagen y convertirla en base64
@@ -64,6 +63,7 @@ elif seleccion == "Visualización":
     # Mostrar resultados
     st.markdown(f"**Constante aprendida por el perceptrón:** k = {learned_k:.4f}")
     plot_results(x, F, pred, k_real, learned_k)
+
 
 st.title("📉 Perceptrón que aprende la Ley de Hooke")
 
