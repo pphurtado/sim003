@@ -10,7 +10,7 @@ st.set_page_config(page_title="Perceptrón y Ley de Hooke", layout="wide")
 # Menú lateral (tipo hamburguesa)
 with st.sidebar:
     st.title("Menú")
-    seleccion = st.radio("Ir a:", ["Inicio","Configuración","Visualización"])
+    seleccion = st.radio("Ir a:", ["Inicio","Teoría","Visualización"])
     st.markdown("---")
     st.write("Opciones adicionales")
     
@@ -34,7 +34,9 @@ st.markdown(
 if seleccion == "Inicio":
     st.subheader("Bienvenido al Dashboard")
     st.write("Selecciona una opción del menú para comenzar.")
-
+elif seleccion == "Teoría":
+    st.subheader("⚙️ Teoría")
+    st.write("Se explica el programa.")
 elif seleccion == "Configuración":
     st.subheader("⚙️ Configuración")
     st.write("Ajusta los parámetros según tus necesidades.")
@@ -53,11 +55,7 @@ elif seleccion == "Configuración":
     with torch.no_grad():
         pred = model(x)
         learned_k = -model.weight.item()
-    
-elif seleccion == "Visualización":
-    st.subheader("📊 Visualización de Datos")
-    st.write("Aquí podrías insertar un gráfico, tabla o resultado.")
-    
+        
 st.title("📉 Perceptrón que aprende la Ley de Hooke")
 
 st.markdown("""
@@ -66,6 +64,8 @@ Este dashboard muestra cómo un perceptrón simple puede aprender la ley de Hook
 Usamos datos sintéticos generados con una constante de resorte \\( k \\).
 """)
 # Mostrar resultados
+st.subheader("📊 Visualización de Datos")
+st.write("Aquí podrías insertar un gráfico, tabla o resultado.")
 st.markdown(f"**Constante aprendida por el perceptrón:** k = {learned_k:.4f}")
 plot_results(x, F, pred, k_real, learned_k)
 
