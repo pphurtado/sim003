@@ -3,17 +3,9 @@ import matplotlib.pyplot as plt
 import torch
 from model import train_perceptron
 from utils import generate_hooke_data, plot_results
-
+#---------------------------------------------------------------------------------------------------
 # Configuración de la página
 st.set_page_config(page_title="Perceptrón y Ley de Hooke", layout="wide")
-
-# Menú lateral (tipo hamburguesa)
-with st.sidebar:
-    st.title("Menú")
-    seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
-    st.markdown("---")
-    st.write("Opciones adicionales")
-    
 #Para Cargar Loto
 import base64
 # Cargar la imagen y convertirla en base64
@@ -31,6 +23,15 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+#------------------------------------------------------------------------------------------------------
+
+# Menú lateral (tipo hamburguesa)
+with st.sidebar:
+    st.title("Menú")
+    seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
+    st.markdown("---")
+    st.write("Opciones adicionales")
+    
 if seleccion == "Home":
     st.subheader("Bienvenido al Dashboard")
     st.write("Selecciona una opción del menú para comenzar.")
