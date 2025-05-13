@@ -10,7 +10,7 @@ st.set_page_config(page_title="Perceptrón y Ley de Hooke", layout="wide")
 # Menú lateral (tipo hamburguesa)
 with st.sidebar:
     st.title("Menú")
-    seleccion = st.radio("Ir a:", ["Inicio","Teoría","Visualización"])
+    seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
     st.markdown("---")
     st.write("Opciones adicionales")
     
@@ -31,14 +31,14 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-if seleccion == "Inicio":
+if seleccion == "Home":
     st.subheader("Bienvenido al Dashboard")
     st.write("Selecciona una opción del menú para comenzar.")
-elif seleccion == "Teoría":
-    st.subheader("⚙️ Teoría")
+elif seleccion == "View":
+    st.subheader("⚙️ View")
     st.write("Se explica el programa.")
-elif seleccion == "Configuración":
-    st.subheader("⚙️ Configuración")
+elif seleccion == "Settings":
+    st.subheader("⚙️ Settings")
     st.write("Ajusta los parámetros según tus necesidades.")
     # Parámetros
     k_real = st.slider("Constante del resorte (k)", min_value=0.1, max_value=10.0, value=3.5, step=0.1)
