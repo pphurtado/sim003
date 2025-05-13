@@ -24,17 +24,28 @@ st.markdown(
     unsafe_allow_html=True
 )
 #------------------------------------------------------------------------------------------------------
-
 # Menú lateral (tipo hamburguesa)
 with st.sidebar:
     st.title("Menú")
     seleccion = st.radio("Ir a:", ["Home", "View", "Settings"])
     st.markdown("---")
-    st.write("Opciones adicionales")
-    
+    st.write("Opciones adicionales")  
 if seleccion == "Home":
     st.subheader("Bienvenido al Dashboard")
-    st.write("Selecciona una opción del menú para comenzar.")
+    st.write("Paso 1: Generar datos sintéticos")
+    st.markdown("""
+        import torch
+        import matplotlib.pyplot as plt
+        
+        # Constante del resorte
+        k = 3.5
+        
+        # Entradas (elongaciones)
+        x = torch.linspace(-10, 10, 100).unsqueeze(1)
+        
+        # Salidas (fuerza)
+        F = -k * x
+""")
 elif seleccion == "View":
     st.subheader("⚙️ View")
     st.write("Se explica el programa.")
