@@ -43,7 +43,7 @@ with st.sidebar:
         with torch.no_grad():
             pred = model(x)
             learned_k = -model.weight.item()
-if seleccion == "⚙️ Algorithm":
+if seleccion == "Algorithm":
     #st.title("🧠 Explicación del Perceptrón aplicado a la Ley de Hooke")
     #st.subheader("Perceptrón que aprende la Ley de Hooke")
     st.header("¿Cómo trabaja este algoritmo?")
