@@ -34,14 +34,7 @@ if seleccion == "Home":
     st.subheader("Perceptrón que aprende la Ley de Hooke")
     st.subheader("Paso 1: Generar datos sintéticos")
     st.markdown("""
-        #import torch
-        #import matplotlib.pyplot as plt
-        # Constante del resorte
-        #k = 3.5
-        # Entradas (elongaciones)
-        #x = torch.linspace(-10, 10, 100).unsqueeze(1)
-        # Salidas (fuerza)
-        #F = -k * x
+        aqui voy a pegar la leña marismeña
 """)
 elif seleccion == "View":
     st.subheader("⚙️ View")
