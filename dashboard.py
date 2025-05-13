@@ -27,10 +27,10 @@ st.markdown(
 # Menú lateral (tipo hamburguesa)
 with st.sidebar:
     st.title("Menú")
-    seleccion = st.radio("Ir a:", ["Home","Algorithm","View","Settings"])
+    seleccion = st.radio("Ir a:", ["Home","Algorithm","View"])
     st.markdown("---")
     st.write("Opciones adicionales")
-    if seleccion == "Settings":
+    if seleccion == "View":
         opcion_extra = st.checkbox("Activar modo avanzado")
         st.markdown("aquí pego el primer control")
         # Parámetros para el menú
