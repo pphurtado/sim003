@@ -57,17 +57,8 @@ elif seleccion == "Algorithm":
         aqui voy a pegar la leña marismeña
     """)   
 elif seleccion == "View":
-    st.subheader("⚙️ View")
-    st.title("📉 Perceptrón que aprende la Ley de Hooke")    
-    st.write("Se explica el programa.")
-    st.markdown("""
-    Este dashboard muestra cómo un perceptrón simple puede aprender la ley de Hooke:  
-    \\( F = -k \\cdot x \\)  
-    Usamos datos sintéticos generados con una constante de resorte \\( k \\).
-    """)
-    # Mostrar resultados
     st.subheader("📊 Visualización de Datos")
-    st.write("Aquí podrías insertar un gráfico, tabla o resultado.")
+    # Mostrar resultados
     st.markdown(f"**Constante aprendida por el perceptrón:** k = {learned_k:.4f}")
     plot_results(x, F, pred, k_real, learned_k)
 
