@@ -31,7 +31,7 @@ with st.sidebar:
     st.markdown("---")
     st.write("Opciones adicionales")  
 if seleccion == "Home":
-    st.subheader("Bienvenido al Dashboard")
+    st.subheader("Perceptrón que aprende la Ley de Hooke")
     st.write("Paso 1: Generar datos sintéticos")
     st.markdown("""
         import torch
