@@ -51,7 +51,7 @@ if seleccion == "Algorithm":
     ### 1. 🔹 Perceptrón simple
     Un perceptrón es una unidad básica de red neuronal que realiza una operación lineal:
     \\[
-    y = w \\cdot x + b
+    y = w.x + b
     \\]
     En este caso particular:
     - Eliminamos el sesgo (\\( b = 0 \\)),
