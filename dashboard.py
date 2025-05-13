@@ -50,7 +50,7 @@ if seleccion == "Home":
     st.markdown("""
         aqui voy a pegar la teoría Perceptrón
     """)   
-elif seleccion == "Algoritm":
+elif seleccion == "Algorithm":
     st.subheader("⚙️ Algorithm")
     st.subheader("Paso 1: Generar datos sintéticos")
     st.markdown("""
