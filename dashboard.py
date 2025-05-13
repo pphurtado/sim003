@@ -31,8 +31,6 @@ with st.sidebar:
     st.markdown("---")
     st.write("Opciones adicionales")
     if seleccion == "View":
-        opcion_extra = st.checkbox("Activar modo avanzado")
-        st.markdown("aquí pego el primer control")
         # Parámetros para el menú
         k_real = st.slider("Constante del resorte (k)", min_value=0.1, max_value=10.0, value=3.5, step=0.1)
         lr = st.number_input("Tasa de aprendizaje", min_value=0.001, max_value=1.0, value=0.01)
