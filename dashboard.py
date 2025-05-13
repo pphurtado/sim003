@@ -44,8 +44,8 @@ with st.sidebar:
             pred = model(x)
             learned_k = -model.weight.item()
 if seleccion == "⚙️ Algorithm":
-    st.title("🧠 Explicación del Perceptrón aplicado a la Ley de Hooke")
-    st.subheader("Perceptrón que aprende la Ley de Hooke")
+    #st.title("🧠 Explicación del Perceptrón aplicado a la Ley de Hooke")
+    #st.subheader("Perceptrón que aprende la Ley de Hooke")
     st.header("¿Cómo trabaja este algoritmo?")
     
 elif seleccion == "View":
