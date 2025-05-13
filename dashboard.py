@@ -27,19 +27,17 @@ st.markdown(
 # Menú lateral (tipo hamburguesa)
 with st.sidebar:
     st.title("Menú")
-    seleccion = st.radio("Ir a:", ["Home", "Algoritm","View", "Settings"])
+    seleccion = st.radio("Ir a:", ["Home","Algorithm","View","Settings"])
     st.markdown("---")
     st.write("Opciones adicionales")  
 if seleccion == "Home":
     st.subheader("Perceptrón que aprende la Ley de Hooke")
-    
 elif seleccion == "Algoritm":
-    st.subheader("⚙️ View")
+    st.subheader("⚙️ Algorithm")
     st.subheader("Paso 1: Generar datos sintéticos")
     st.markdown("""
         aqui voy a pegar la leña marismeña
-""")
-    
+    """)   
 elif seleccion == "View":
     st.subheader("⚙️ View")
     st.write("Se explica el programa.")
