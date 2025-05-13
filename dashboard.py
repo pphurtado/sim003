@@ -56,12 +56,12 @@ if seleccion == "Algorithm":
     En este caso particular:
     - Eliminamos el sesgo (\\( b = 0 \\)),
     - Solo usamos un peso \\( w \\),
-    - Quedando así: \\( y = w \\cdot x \\), que es una relación lineal.
+    - Quedando así: \\( y = w.x \\), que es una relación lineal.
     ---
     ### 2. 🔹 Ley de Hooke como función objetivo
     La **ley de Hooke** establece que:
     \\[
-    F = -k \\cdot x
+    F = -k.x
     \\]
     Queremos que el perceptrón aprenda esta relación. Si el peso del perceptrón se ajusta a \\( w = -k \\), entonces su salida será igual a la fuerza \\( F \\).
     ---
