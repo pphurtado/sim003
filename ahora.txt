@@ -1,3 +1,5 @@
+st.title("🧠 Explicación del Perceptrón aplicado a la Ley de Hooke")
+    st.header("¿Cómo trabaja este algoritmo?")
 st.markdown("""
     ### 1. 🔹 Perceptrón simple
     Un perceptrón es una unidad básica de red neuronal que realiza una operación lineal:
