@@ -32,19 +32,16 @@ with st.sidebar:
     st.write("Opciones adicionales")  
 if seleccion == "Home":
     st.subheader("Perceptrón que aprende la Ley de Hooke")
-    st.write("Paso 1: Generar datos sintéticos")
+    st.subheader("Paso 1: Generar datos sintéticos")
     st.markdown("""
-        import torch
-        import matplotlib.pyplot as plt
-        
+        #import torch
+        #import matplotlib.pyplot as plt
         # Constante del resorte
-        k = 3.5
-        
+        #k = 3.5
         # Entradas (elongaciones)
-        x = torch.linspace(-10, 10, 100).unsqueeze(1)
-        
+        #x = torch.linspace(-10, 10, 100).unsqueeze(1)
         # Salidas (fuerza)
-        F = -k * x
+        #F = -k * x
 """)
 elif seleccion == "View":
     st.subheader("⚙️ View")
